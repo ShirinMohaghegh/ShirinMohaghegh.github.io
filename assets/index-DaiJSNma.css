@@ -1024,9 +1024,14 @@ button {
     border-radius: var(--r-card);
   }
 
-  .section-heading {
-    align-items: flex-start;
-    gap: 10px;
+  .today-doctors .section-heading {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .today-doctors .section-heading .section-more {
+    align-self: flex-start;
   }
 
   .section-heading h2 {
@@ -2366,6 +2371,16 @@ button {
 @media (max-width: 768px) {
   .specialties-section {
     padding-block: var(--space-section-mobile);
+  }
+
+  .specialties-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .specialties-more {
+    align-self: flex-start;
   }
 
   .specialties-heading {
